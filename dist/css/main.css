@@ -58,14 +58,14 @@
       background: url(../img/portrait.png);
       background-size: cover;
       border-radius: 50%;
-      border: solid 3px #8ab0ab; }
+      border: solid 3px #ff88dc; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #8ab0ab; }
+      color: #ff88dc; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -77,7 +77,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #8ab0ab; }
+      color: #ff88dc; }
 
 #bg-img header .menu .menu-branding .portrait {
   opacity: 1; }
@@ -144,22 +144,33 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #8ab0ab; }
+  color: #ff88dc; }
 
 main {
   padding: 4rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 1rem; }
+    margin: 1rem 0 2rem 0; }
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #8ab0ab;
+        color: #ff88dc;
         transition: all 0.5s ease-out; }
   main#home {
-    overflow: hidden; }
+    overflow: hidden;
+    height: 100%; }
     main#home h1 {
       margin-top: 20vh; }
+    main#home .btn-home {
+      padding: 0.4rem;
+      text-transform: uppercase;
+      border: 2px solid;
+      border-radius: 5px;
+      font-size: 1rem; }
+      main#home .btn-home:hover {
+        background-color: #ff88dc;
+        color: #333;
+        transition: all 0.5s ease-out; }
 
 .about-info {
   display: grid;
@@ -172,7 +183,7 @@ main {
     height: 250px;
     margin: auto;
     border-radius: 50%;
-    border: #8ab0ab 3px solid; }
+    border: #ff88dc 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.4rem; }
@@ -185,7 +196,7 @@ main {
   .about-info .job {
     background: #3c3c3c;
     padding: 0.5rem;
-    border-bottom: #8ab0ab 5px solid; }
+    border-bottom: #ff88dc 5px solid; }
 
 .projects {
   display: grid;
@@ -196,7 +207,7 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #8ab0ab;
+      border-color: #ff88dc;
       transition: all 0.5s ease-out; }
   .projects i {
     padding-right: 0.2rem; }
@@ -215,7 +226,7 @@ main {
     transition: all 0.5s ease-out; }
     .boxes div:hover {
       padding: 0.5rem 1.5rem;
-      background: #8ab0ab;
+      background: #ff88dc;
       color: #333; }
       .boxes div:hover span {
         color: #333; }
@@ -227,7 +238,7 @@ main {
   margin-bottom: 0.3rem;
   text-align: center; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #8ab0ab;
+    background: #ff88dc;
     color: #333; }
 
 .btn-dark {
@@ -297,4 +308,6 @@ main {
   #contact h1.lg-heading {
     font-size: 4rem; }
   .menu-nav {
-    font-size: 18px; } }
+    font-size: 18px; }
+  .boxes div {
+    font-size: 1rem; } }

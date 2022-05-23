@@ -54,7 +54,7 @@ main {
     min-height: calc(100vh - 60px);
 
     .icons {
-        margin-top: 1rem;
+        margin: 1rem 0 2rem 0;
 
         a {
             padding: 0.4rem;
@@ -67,8 +67,21 @@ main {
     }
     &#home {
         overflow: hidden;
+        height: 100%;
         h1 {
             margin-top: 20vh;
+        }
+        .btn-home {
+            padding: 0.4rem;
+            text-transform: uppercase;
+            border: 2px solid;
+            border-radius: 5px;
+            font-size: 1rem;
+            &:hover {
+                background-color: $secondary-color;
+                color: set-text-color($secondary-color);
+                @include easeOut();
+            }
         }
     }
 }
