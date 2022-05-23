@@ -24,7 +24,6 @@
   position: fixed;
   top: 0;
   width: 100%;
-  opacity: 0.9;
   visibility: hidden; }
   .menu.show {
     visibility: visible; }
@@ -40,6 +39,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
+    opacity: 0.9;
     background: #222222;
     list-style: none;
     transform: translate3d(0, -100%, 0);
@@ -47,7 +47,7 @@
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
   .menu-branding {
-    background: #2f2f2f;
+    background: rgba(47, 47, 47, 0.9);
     transform: translate3d(0, 100%, 0);
     transition: all 0.5s ease-out; }
     .menu-branding.show {
@@ -79,7 +79,7 @@
     .menu .nav-link:hover {
       color: #ff88dc; }
 
-#bg-img header .menu .menu-branding .portrait {
+header .menu .menu-branding .portrait {
   opacity: 1; }
 
 .nav-item:nth-child(1) {
@@ -115,7 +115,7 @@ body {
       top: 0;
       right: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       z-index: -1;
       background: rgba(47, 47, 47, 0.8); }
 
