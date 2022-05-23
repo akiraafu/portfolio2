@@ -204,9 +204,10 @@ main {
       height: auto;
       display: flex;
       flex-wrap: wrap;
-      gap: 1rem; }
+      gap: 0.5rem; }
       .about-info .job div i {
-        font-size: 5.5rem; }
+        font-size: 5.5rem;
+        padding: 10px; }
 
 .projects {
   display: grid;
@@ -321,6 +322,6 @@ main {
   .menu-nav {
     font-size: 18px; }
   .about-info .job div i {
-    font-size: 4rem; }
+    font-size: 3.5rem; }
   .boxes div {
     font-size: 1rem; } }
