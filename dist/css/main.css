@@ -107,7 +107,8 @@ body {
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
-    background-size: cover; }
+    background-size: cover;
+    overflow: hidden; }
     body#bg-img::after {
       content: "";
       position: absolute;
@@ -319,5 +320,7 @@ main {
     font-size: 4rem; }
   .menu-nav {
     font-size: 18px; }
+  .about-info .job div i {
+    font-size: 4rem; }
   .boxes div {
     font-size: 1rem; } }
