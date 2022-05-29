@@ -31,7 +31,7 @@ function toggleMenu() {
     }
 }
 
-// email.js
+// contact form email.js
 
 const btn = document.querySelector(".btn-contact");
 const myform = document.getElementById("myform");
@@ -49,6 +49,7 @@ function sendMail(params) {
     emailjs.sendForm("service_t5oaxze", "template_6m6rrsl", myform, "R321p3jpE6qwXirhc").then(
         function (response) {
             console.log("SUCCESS!", response.status, response.text);
+            alert("Message sent! (〃＾∇＾) I'll get in touch with you soon!");
         },
         function (error) {
             console.log("FAILED...", error);
