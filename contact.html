@@ -59,26 +59,29 @@
                             </a>
                         </div>
                     </div>
-                    <div class="contact__options">
+                    <!-- <div class="contact__options">
                         <div class="contact__option">
                             <i class="fab fa-facebook-messenger contact__option-icon"></i>
                             <h4>Messenger</h4>
                             <h5>Junrong Fu (Akira)</h5>
                             <a href="https://m.me/junrong.fu" target="_blank"> Send a Message </a>
                         </div>
-                    </div>
-                    <!-- <div class="contact__options">
+                    </div> -->
+                    <div class="contact__options">
                         <div class="contact__option">
                             <i class="fab fa-whatsapp contact__option-icon"></i>
                             <h4>WhatsApp</h4>
                             <h5>Junrong</h5>
-                            <a href="https://api.whatsapp.com/send?phone=+61" target="_blank">
+                            <a
+                                href="https://api.whatsapp.com/send?phone=+610497858903"
+                                target="_blank"
+                            >
                                 Send a Message
                             </a>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
-                <form ref="{form}" onSubmit="{sendEmail}">
+                <form id="myform">
                     <input type="text" name="name" placeholder="Your Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
                     <textarea
@@ -87,7 +90,9 @@
                         rows="7"
                         required
                     ></textarea>
-                    <button type="submit" class="btn-home btn-contact">Leave a Message</button>
+                    <button type="submit" class="btn-home btn-contact" onclick="sendMail()">
+                        Leave Message
+                    </button>
                 </form>
             </div>
         </main>
@@ -95,7 +100,7 @@
         <footer id="main-footer">Copyright &copy; 2022</footer>
 
         <script src="js/main.js"></script>
-        <!-- <script
+        <script
             type="text/javascript"
             src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
         ></script>
@@ -103,6 +108,6 @@
             (function () {
                 emailjs.init("R321p3jpE6qwXirhc");
             })();
-        </script> -->
+        </script>
     </body>
 </html>

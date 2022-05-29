@@ -30,3 +30,28 @@ function toggleMenu() {
         showMenu = false;
     }
 }
+
+// email.js
+
+const btn = document.querySelector(".btn-contact");
+const myform = document.getElementById("myform");
+btn.addEventListener("click", (e) => {
+    e.preventDefault();
+});
+
+function sendMail(params) {
+    let tempParams = {
+        name: document.getElementsByName("name").value,
+        email: document.getElementsByName("email").value,
+        message: document.getElementsByName("message").value,
+    };
+    console.log(tempParams);
+    emailjs.sendForm("service_t5oaxze", "template_6m6rrsl", myform, "R321p3jpE6qwXirhc").then(
+        function (response) {
+            console.log("SUCCESS!", response.status, response.text);
+        },
+        function (error) {
+            console.log("FAILED...", error);
+        }
+    );
+}
