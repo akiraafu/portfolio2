@@ -56,6 +56,10 @@
             "job3";
         grid-template-columns: 1fr;
     }
+    .boxes {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
     .projects {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -78,10 +82,21 @@
             font-size: 4rem;
         }
     }
+
+    .btn-home {
+        a {
+            font-size: 14px;
+        }
+    }
     .menu-nav {
         font-size: 18px;
     }
     .about-info {
+        .bio {
+            p {
+                font-size: 14px;
+            }
+        }
         .job {
             div {
                 i {

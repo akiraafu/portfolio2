@@ -45,14 +45,64 @@
             <h1 class="lg-heading">Contact <span class="text-secondary">Me</span></h1>
             <h2 class="sm-heading">This is how you can reach me...</h2>
             <div class="boxes">
-                <div><span class="text-secondary">Email:</span> junrongfu6@Gmail.com</div>
+                <!-- <div><span class="text-secondary">Email:</span> junrongfu6@Gmail.com</div>
                 <div><span class="text-secondary">Phone:</span> 0400-000-000</div>
-                <div><span class="text-secondary">Address:</span> Wilson, Western Australia</div>
+                <div><span class="text-secondary">Address:</span> Wilson, Western Australia</div> -->
+                <div class="allContacts">
+                    <div class="contact__options">
+                        <div class="contact__option">
+                            <i class="far fa-envelope contact__option-icon"></i>
+                            <h4>Email</h4>
+                            <h5>junrongfu6@gmail.com</h5>
+                            <a href="mailto:junrongfu6@gmail.com" target="_blank">
+                                Send an Email
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact__options">
+                        <div class="contact__option">
+                            <i class="fab fa-facebook-messenger contact__option-icon"></i>
+                            <h4>Messenger</h4>
+                            <h5>Junrong Fu (Akira)</h5>
+                            <a href="https://m.me/junrong.fu" target="_blank"> Send a Message </a>
+                        </div>
+                    </div>
+                    <!-- <div class="contact__options">
+                        <div class="contact__option">
+                            <i class="fab fa-whatsapp contact__option-icon"></i>
+                            <h4>WhatsApp</h4>
+                            <h5>Junrong</h5>
+                            <a href="https://api.whatsapp.com/send?phone=+61" target="_blank">
+                                Send a Message
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+                <form ref="{form}" onSubmit="{sendEmail}">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea
+                        name="message"
+                        placeholder="Your Message"
+                        rows="7"
+                        required
+                    ></textarea>
+                    <button type="submit" class="btn-home btn-contact">Leave a Message</button>
+                </form>
             </div>
         </main>
 
         <footer id="main-footer">Copyright &copy; 2022</footer>
 
         <script src="js/main.js"></script>
+        <!-- <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+        ></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("R321p3jpE6qwXirhc");
+            })();
+        </script> -->
     </body>
 </html>
