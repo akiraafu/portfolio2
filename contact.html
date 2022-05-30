@@ -81,7 +81,7 @@
                         </div>
                     </div>
                 </div>
-                <form id="myform">
+                <form id="myform" method="post" onsubmit="sendEmail()">
                     <input type="text" name="name" placeholder="Your Name" required />
                     <input type="email" name="email" placeholder="Your Email" required />
                     <textarea
@@ -90,9 +90,7 @@
                         rows="7"
                         required
                     ></textarea>
-                    <button type="submit" class="btn-home btn-contact" onclick="sendMail()">
-                        Leave Message
-                    </button>
+                    <button type="submit" class="btn-home btn-contact">Leave Message</button>
                 </form>
             </div>
         </main>
