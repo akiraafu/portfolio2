@@ -33,10 +33,19 @@ function toggleMenu() {
 
 // contact form email.js
 
+// const name = document.getElementsByName("name");
+// const email = document.getElementsByName("email");
+// const message = document.getElementsByName("message");
 const btn = document.querySelector(".btn-contact");
 const myform = document.getElementById("myform");
+
 btn.addEventListener("click", (e) => {
     e.preventDefault();
+    if (myform.checkValidity() === true) {
+        sendMail();
+    } else {
+        alert("Error: empty input(s)");
+    }
 });
 
 function sendMail(params) {
