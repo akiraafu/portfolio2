@@ -6,7 +6,7 @@
     "homepage": "https://akiraafu.github.io/portfolio2",
     "scripts": {
         "sass": "node-sass -w scss/ -o dist/css/ --recursive",
-        "deploy": "gh-pages -d dist"
+    
     },
     "author": "Junrong Fu",
     "license": "ISC",
